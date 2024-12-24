@@ -1,0 +1,124 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* Rolagem suave */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #c0c0c0;
+  background-color: #191919;
+  padding: 0 1rem;
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #3dfc46;
+  color: #353535;
+}
+
+.carrossel {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  margin: 2rem auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.8s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  text-align: center;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+  border-bottom: 2px solid #ccc;
+  transition: filter 0.8s ease-in-out;
+}
+
+.slide p {
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.sapoha {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 50%;
+}
+
+button1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 50%;
+}
+
+button1:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+button1.prev {
+  left: 10px;
+}
+
+button1.next {
+  right: 10px;
+}
+
+/* Seção de texto */
+.texto h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.texto p {
+  text-align: justify;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #222;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+}
